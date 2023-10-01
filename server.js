@@ -44,5 +44,5 @@ const PORT = process.env.PORT;
 
 //run listen
 app.listen(PORT, () => {
-  console.log(`sever run on ${PORT}`.bgCyan.white);
+  console.log('sever running'.bgCyan.white);
 });
