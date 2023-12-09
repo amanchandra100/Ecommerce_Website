@@ -1,5 +1,8 @@
 import categoryModel from "../models/categoryModel.js";
 import slugify from "slugify";
+
+
+
 export const createCategoryController = async (req, res) => {
   try {
     const { name } = req.body;
@@ -113,3 +116,8 @@ export const deleteCategoryController = async (req, res) => {
     });
   }
 };
+
+
+
+
+
