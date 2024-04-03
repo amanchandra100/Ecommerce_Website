@@ -23,13 +23,17 @@ const userSchema = new mongoose.Schema(
     },
     address: {
       type: {},
-      required: true,
+      required: false,
     },
     answer: {
       type: String,
-      required: true,
+      required: false,
     },
     role: {
+      type: Number,
+      default: 0,
+    },
+    verified: {
       type: Number,
       default: 0,
     },
