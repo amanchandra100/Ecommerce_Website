@@ -23,7 +23,6 @@ const sendEmail = expressAsyncHandler(async (req, res) => {
   try {
     const { email } = req.body;
     const userData = await userModel.findOne({email})
-    console.log(email);
     if (!userData) {
       return res.status(400).json({
         success: false,
@@ -38,7 +37,6 @@ const sendEmail = expressAsyncHandler(async (req, res) => {
     // }
   
   const g_otp = generateOTP();
-  console.log(g_otp)
 
   const oldOtpData= await otpModel.findOne({user_id: userData._id})
 

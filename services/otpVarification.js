@@ -6,7 +6,6 @@ const verifyOtp = async(req,res) => {
     try {
 
         const { email, otp } = req.body
-        console.log(email)
 
         const userData = await userModel.findOne({
             email:email
